@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/*
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Inter', sans-serif;
+*/
+
+body {
+    background-color: rgba(10,12,27,255);
+    color: white;
+}
+
+#layout{
+    background-color: rgba(28,25,56,255);
+}
+
+#main-content{
+    background-color: rgba(28,25,56,255);
+}
+
+#description{
+    font-family: 'Inter', sans-serif;
+    color: rgb(182, 182, 182)
+}
+
+img{
+    filter: invert(15%) sepia(13%) saturate(2507%) hue-rotate(220deg) brightness(85%) contrast(80%);
+}
+
+h2{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.notes::first-line {
+    color: white;
+}
+
+.notes {
+    font-family: 'Inter', sans-serif;
+    color: rgb(182, 182, 182);
+}
+
+@media only screen and (orientation: portrait) {
+
+    #layout{
+        margin: 17% auto;
+        width: 90%;
+    }
+
+    h2{
+        text-align: center;
+        width: 90%;
+        margin: 5%;
+    }
+
+    #main-content{
+        text-align: center;
+        margin: 10% 10% 10% 10%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #description{
+        font-size: 80%;
+    }
+
+    #buttons{
+        padding-bottom: 5%;
+    }
+
+    .notes{
+        margin: 10% 5% 4% 5%;
+        font-size: 70%;
+    }
+
+}
+
+@media only screen and (orientation: landscape) {
+
+    #layout{
+        margin: 5% auto;
+        width: 90%;
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
+        float: right;
+    }
+
+    #main-content{
+        padding: 5%;
+        width: 50%;
+    }
+
+    h2{
+        font-size: 200%;
+    }
+
+    #description{
+        margin: 10% 0 7% 0;
+        width: 80%;
+    }
+
+    #buttons{
+        background-color: rgba(28,25,56,255);
+        padding-bottom: 0%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .notes{
+        grid-auto-flow: row;
+        margin: 10% 5% 4% 5%;
+        font-size: 70%;
+    }
+
+    .attribution {
+        clear: both;
+    }
+
+}
